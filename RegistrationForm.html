@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style> 
+	html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+}
+
+#main-holder {
+  width: 50%;
+  height: 70%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 2px black;
+}
+
+
+
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.login-form-field::placeholder {
+  color: #b00c11;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.login-form-field {
+  border: fixed;
+  width : 200%;
+  height: 50%;
+  border-bottom: 1px solid #0000FF;
+  margin-bottom: 50px;
+  border-radius: 3px;
+  outline: none;
+  padding: 0px 0px 5px 5px;
+}
+
+#login-form-submit {
+  width: 200%;
+  height: 150%;
+  padding: 7px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: #000080;
+  cursor: pointer;
+  outline: none;
+}
+  </style>
+  
+  <title>User Login</title>
+  
+</head>
+
+<body>
+
+  <main id="">
+    <h1 id="login-header">USER  REGISTRATION</h1>
+    
+    
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="text" name="email" id="password-field" class="login-form-field" placeholder="Enter Email">
+	  <input type="text" name="contact" id="password-field" class="login-form-field" placeholder="Enter Contact">
+	  <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Enter Password">
+	  <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Confirm Password">
+	  
+      <input type="submit" value="CREATE ACCOUNT" id="login-form-submit">
+	  
+    </form>
+  
+  </main>
+</body>
+
+</html>
